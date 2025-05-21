@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我是好人</title>
+    <style>
+        button.haisong {
+            display :block;
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+    <style>
+        img.haisong {
+            width: 500px;
+            height: auto;
+        }
+    </style>
+
+
+</head>
+<body>
+    <button class= 'haisong' onclick="
+            totalprice=totalprice+1000
+            console.log('购物车增加')
+            console.log(totalprice)
+
+        
+        
+        
+        
+        ">增加数量</button>
+
+
+
+
+
+
+    <button class= 'haisong' onclick="
+                    totalprice=totalprice-1000; 
+                    console.log('购物车减少');
+                    console.log(totalprice);
+                    ">减少数量
+                </button>
+
+
+    <button class= 'haisong' onclick = "
+                totalprice = 0;
+                console.log('购物车清空');
+                console.log(totalprice);
+                " >清空数量</button>
+
+                
+    <img class="haisong" src="微信图片_20250413202607.jpg" alt="商品图片">
+    <p>$1000</p>
+    <button>加入购物车</button>
+ 
+
+    <script>
+        function num_add(){
+        let total =0;
+        for (let i=1 ; i<= 100; i++){
+
+            
+            total += i;
+            
+        }
+        return total;
+       
+        }
+        console.log(num_add());
+      
+        
+        
+    </script>
+
+</body>
+</html>
+  
